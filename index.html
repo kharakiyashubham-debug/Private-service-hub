@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Private Service Hub - Bhiwani</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Private Service Hub in Bhiwani. Premium private massage and relaxation services available at home or hotel, Service available Day & Night. Easy WhatsApp booking.">
+  <meta name="keywords" content="Bhiwani service, massage service Bhiwani, private service Bhiwani, home service Bhiwani, hotel service Bhiwani, 24/7 service Bhiwani">
+  <meta name="author" content="Private Service Hub">
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f2f2f2;
+      text-align: center;
+    }
+
+    header {
+      background: black;
+      color: white;
+      padding: 20px;
+    }
+
+    .container {
+      padding: 15px;
+    }
+
+    /* Banner style for Day & Night */
+    .banner {
+      background: #ff4500;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      animation: blink 1.2s infinite;
+    }
+
+    @keyframes blink {
+      0%,50%,100%{opacity:1;}
+      25%,75%{opacity:0.3;}
+    }
+
+    .slider {
+      position: relative;
+      display: inline-block;
+    }
+
+    .slider img {
+      width: 90%;
+      max-width: 400px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin: 10px 0;
+      filter: brightness(0.8) contrast(1.1);
+      transition: 0.5s;
+    }
+
+    .slider img:hover {
+      transform: scale(1.05);
+      filter: brightness(0.7) contrast(1.2);
+    }
+
+    .card {
+      background: white;
+      margin: 15px auto;
+      padding: 15px;
+      border-radius: 10px;
+      max-width: 400px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    input, textarea {
+      width: 95%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 12px;
+      width: 80%;
+      margin: 10px auto;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+      display: block;
+    }
+
+    .whatsapp {
+      background: green;
+    }
+
+    .call {
+      background: blue;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    /* Services cards */
+    .services-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      width: 160px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.2);
+      transition:0.3s;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .service-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom:8px;
+      height:100px;
+      object-fit:cover;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Private Service Hub 🔥</h1>
+    <p>Premium private massage & relaxation services in Bhiwani — at Home or Hotel</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Banner -->
+    <div class="banner">🚨 Service Available Day & Night 🚨</div>
+
+    <!-- Slider -->
+    <div class="slider">
+      <img id="slide" src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999">
+    </div>
+
+    <!-- Services Section -->
+    <div class="card" style="text-align:center;">
+      <h2>Our Services</h2>
+      <p>We provide our premium services both at your Home or at Hotel Rooms</p>
+      <div class="services-container">
+
+        <!-- Home Service Card -->
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+          <h4>Home Service</h4>
+          <p>Private massage & relaxation at your home</p>
+        </div>
+
+        <!-- Hotel Service Card -->
+        <div class="service-card">
+          <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2">
+          <h4>Hotel Service</h4>
+          <p>Premium private service in hotel rooms</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="card">
+      <h2 style="text-align:center;">Book Service</h2>
+
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your Name">
+
+      <label>Age</label>
+      <input type="number" id="age" placeholder="Your Age">
+
+      <label>Address</label>
+      <textarea id="address" placeholder="Address"></textarea>
+
+      <label>Date</label>
+      <input type="date" id="date">
+
+      <label>Time</label>
+      <input type="time" id="time">
+
+      <button onclick="bookNow()">Submit Booking</button>
+    </div>
+
+    <!-- About -->
+    <div class="card">
+      <h2 style="text-align:center;">About Us</h2>
+      <p>
+        Private Service Hub provides premium private relaxation and massage services in Bhiwani.
+        We focus on comfort, privacy and customer satisfaction. Services available both at home and in hotel rooms.
+      </p>
+    </div>
+
+    <!-- Contact Section (About Us ke niche) -->
+    <div class="card" style="text-align:center;">
+      <h2>Contact Now</h2>
+      <button class="whatsapp" onclick="window.location.href='https://wa.me/918198913760'">WhatsApp</button>
+      <button class="call" onclick="window.location.href='tel:918198913760'">Call Now</button>
+    </div>
+
+    <!-- Reviews -->
+    <div class="card">
+      <h2 style="text-align:center;">Customer Reviews</h2>
+      <p>⭐⭐⭐⭐⭐ Best service in Bhiwani</p>
+      <p>⭐⭐⭐⭐ Smooth experience</p>
+      <p>⭐⭐⭐⭐⭐ Highly recommended</p>
+    </div>
+
+    <!-- Area -->
+    <div class="card" style="text-align:center;">
+      <h3>Service Area</h3>
+      <p>Bhiwani & Nearby Areas</p>
+    </div>
+
+  </div>
+
+  <script>
+    // Slider
+    let images = [
+      "https://images.unsplash.com/photo-1516589091380-5d8e87df6999",
+      "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e",
+      "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+      "https://images.unsplash.com/photo-1596178065887-1198b6148b2b",
+      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
+    ];
+
+    let i = 0;
+    setInterval(function(){
+      i = (i + 1) % images.length;
+      document.getElementById("slide").src = images[i];
+    }, 3000);
+
+    // Booking
+    function bookNow() {
+      let name = document.getElementById("name").value;
+      let age = document.getElementById("age").value;
+      let address = document.getElementById("address").value;
+      let date = document.getElementById("date").value;
+      let time = document.getElementById("time").value;
+
+      if(name=="" || age=="" || address=="" || date=="" || time==""){
+        alert("Please fill all details");
+        return;
+      }
+
+      let message = "New Booking:%0A"
+        + "Name: " + name + "%0A"
+        + "Age: " + age + "%0A"
+        + "Address: " + address + "%0A"
+        + "Date: " + date + "%0A"
+        + "Time: " + time;
+
+      let url = "https://wa.me/918198913760?text=" + message;
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
